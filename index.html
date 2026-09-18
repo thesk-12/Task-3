@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>DevLearn | Advanced JavaScript</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="navbar">
+
+        <a href="#home" class="logo">
+            Dev<span>Learn</span>
+        </a>
+
+        <nav>
+
+            <a href="#home">Home</a>
+
+            <a href="#quiz">Quiz</a>
+
+            <a href="#gallery">Gallery</a>
+
+            <a href="#weather">API</a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                TASK 3 • ADVANCED JAVASCRIPT
+            </p>
+
+            <h1>
+                Learn.
+                <span>Interact.</span>
+                Explore.
+            </h1>
+
+            <p class="hero-description">
+                An interactive web application demonstrating
+                responsive design, JavaScript interaction and
+                real-time API data.
+            </p>
+
+            <a href="#quiz" class="primary-button">
+                Start Learning
+            </a>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+            <div class="floating-card card-one">
+                <strong>JS</strong>
+                <span>Interactive</span>
+            </div>
+
+            <div class="code-window">
+
+                <div class="window-top">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <pre><code>const learn = () => {
+    return "JavaScript";
+};</code></pre>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         RESPONSIVE FEATURES
+    ========================== -->
+
+    <section class="features">
+
+        <div class="feature-card">
+
+            <div class="feature-number">
+                01
+            </div>
+
+            <h3>
+                Responsive
+            </h3>
+
+            <p>
+                The layout automatically adapts
+                to desktop, tablet and mobile
+                screens.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-number">
+                02
+            </div>
+
+            <h3>
+                Interactive
+            </h3>
+
+            <p>
+                JavaScript powers the quiz,
+                carousel and dynamic interactions.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-number">
+                03
+            </div>
+
+            <h3>
+                API Powered
+            </h3>
+
+            <p>
+                Fetch real-time weather information
+                from a public API.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         QUIZ
+    ========================== -->
+
+    <section id="quiz" class="quiz-section">
+
+        <div class="section-heading">
+
+            <p>
+                JAVASCRIPT QUIZ
+            </p>
+
+            <h2>
+                Test Your Web Knowledge
+            </h2>
+
+            <span>
+                Answer the questions and check your score.
+            </span>
+
+        </div>
+
+
+        <div class="quiz-card">
+
+            <div class="quiz-top">
+
+                <span id="questionNumber">
+                    Question 1 of 5
+                </span>
+
+                <span id="scoreDisplay">
+                    Score: 0
+                </span>
+
+            </div>
+
+
+            <div class="progress-container">
+
+                <div
+                    id="quizProgress"
+                    class="progress-bar"
+                ></div>
+
+            </div>
+
+
+            <h3 id="questionText">
+                Loading question...
+            </h3>
+
+
+            <div
+                id="answerButtons"
+                class="answer-buttons"
+            ></div>
+
+
+            <div class="quiz-controls">
+
+                <button
+                    id="nextButton"
+                    class="primary-button"
+                    disabled
+                >
+                    Next Question
+                </button>
+
+            </div>
+
+
+            <div
+                id="quizResult"
+                class="quiz-result"
+            ></div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         IMAGE CAROUSEL
+    ========================== -->
+
+    <section id="gallery" class="gallery-section">
+
+        <div class="section-heading">
+
+            <p>
+                IMAGE CAROUSEL
+            </p>
+
+            <h2>
+                Explore Web Development
+            </h2>
+
+            <span>
+                Use the controls to change the images.
+            </span>
+
+        </div>
+
+
+        <div class="carousel">
+
+            <button
+                id="previousButton"
+                class="carousel-button previous"
+                aria-label="Previous image"
+            >
+                &#10094;
+            </button>
+
+
+            <div class="carousel-image-container">
+
+                <img
+                    id="carouselImage"
+                    src=""
+                    alt="Web development"
+                >
+
+                <div class="image-overlay">
+
+                    <span id="imageCounter">
+                        1 / 5
+                    </span>
+
+                    <h3 id="imageTitle">
+                        Web Development
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <button
+                id="nextImageButton"
+                class="carousel-button next"
+                aria-label="Next image"
+            >
+                &#10095;
+            </button>
+
+        </div>
+
+
+        <div
+            id="carouselDots"
+            class="carousel-dots"
+        ></div>
+
+    </section>
+
+
+
+    <!-- =========================
+         API WEATHER
+    ========================== -->
+
+    <section id="weather" class="weather-section">
+
+        <div class="section-heading">
+
+            <p>
+                JAVASCRIPT API
+            </p>
+
+            <h2>
+                Live Weather Data
+            </h2>
+
+            <span>
+                Data is fetched dynamically from a public API.
+            </span>
+
+        </div>
+
+
+        <div class="weather-card">
+
+            <div class="weather-search">
+
+                <label for="cityInput">
+                    Enter City
+                </label>
+
+                <div class="search-row">
+
+                    <input
+                        type="text"
+                        id="cityInput"
+                        placeholder="Example: Jaipur"
+                        value="Jaipur"
+                    >
+
+                    <button
+                        id="weatherButton"
+                        class="primary-button"
+                    >
+                        Get Weather
+                    </button>
+
+                </div>
+
+                <p
+                    id="weatherError"
+                    class="weather-error"
+                ></p>
+
+            </div>
+
+
+            <div
+                id="weatherResult"
+                class="weather-result"
+            >
+
+                <div class="weather-loading">
+                    Loading weather...
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="logo">
+            Dev<span>Learn</span>
+        </div>
+
+        <p>
+            Task 3 — Advanced Styling and JavaScript
+        </p>
+
+        <p>
+            © 2026 Web Development Project
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
